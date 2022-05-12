@@ -9,6 +9,9 @@ Add the text in the input-fields to a row of the database. The "read" button on 
 to the rows of the data-base with descriptive text in between each entry as well as a line-break after each row. Below is the code for
 the "write"-button.
 
+Note: the amount of wheels is stored as a string instead of the most reasonable which would be an integer. This is because it was easier and
+it was reasoned that this task wasn't testing weather or not I could cast to other types. The same reasoning goes for the hard-coded text-views
+
 ```
 ContentValues values = new ContentValues();
 values.put(DataBaseHelper.COLLUMN_NAME, String.valueOf(nameInput.getText()));
